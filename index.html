@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+    <div class="clock-container" id="clockBox">
+        <div class="toggle" onclick="toggleTheme()">🌙</div>
+
+        <!-- DIGITAL CLOCK -->
+        <div class="clock">
+            <div class="box">
+                <span id="hours">12</span>
+                <p>Hours</p>
+            </div>
+
+            <div class="colon">:</div>
+
+            <div class="box">
+                <span id="minutes">30</span>
+                <p>Minutes</p>
+            </div>
+
+            <div class="colon">:</div>
+
+            <div class="box">
+                <span id="seconds">06</span>
+                <p>Seconds</p>
+            </div>
+
+            <div class="ampm" id="ampm">AM</div>
+        </div>
+
+        <!-- STOPWATCH -->
+        <div class="stopwatch">
+            <h3>Stopwatch</h3>
+            <div id="sw-time">00:00:00</div>
+
+            <div class="sw-buttons">
+                <button onclick="startSW()">Start</button>
+                <button onclick="stopSW()">Stop</button>
+                <button onclick="resetSW()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="title">DYNAMIC<br><span>Digital Clock</span></h1>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
