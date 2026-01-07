@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #eef6fb;
+}
+
+.page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* TITLE */
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #222;
+}
+
+.title span {
+    color: #1e88e5;
+}
+
+/* CLOCK CARD */
+.clock-container {
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    position: relative;
+    animation: fadeIn 1s ease;
+}
+
+/* CLOCK */
+.clock {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    background: #f4f9fc;
+    width: 110px;
+    height: 110px;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box span {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.box p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.colon {
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+.ampm {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+/* STOPWATCH */
+.stopwatch {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#sw-time {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.sw-buttons button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background: #1e88e5;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sw-buttons button:hover {
+    background: #1565c0;
+}
+
+/* TOGGLE */
+.toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* DARK MODE */
+.dark {
+    background: #2e343b;
+    color: white;
+}
+
+.dark .box {
+    background: #1f242a;
+}
+
+.dark .clock-container {
+    background: #2e343b;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 900px) {
+    .page {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+}
