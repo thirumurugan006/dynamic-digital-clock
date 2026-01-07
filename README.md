@@ -29,8 +29,8 @@ functionality, smooth animations, and mobile responsiveness.
 
 ## 📂 Project Structure
 
-dynamic-digital-clock/
-│
-├── index.html
-├── style.css
-└── script.js
+-dynamic-digital-clock/
+-│
+-├── index.html
+-├── style.css
+-└── script.js
